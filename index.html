@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat dan Ketentuan - [Nama Perusahaan]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f9fafb;
+        }
+        
+        .legal-container {
+            counter-reset: section;
+        }
+        
+        .section-title {
+            position: relative;
+            counter-increment: section;
+            counter-reset: subsection;
+        }
+        
+        .section-title:before {
+            content: counter(section) ". ";
+            color: #3b82f6;
+            font-weight: 700;
+        }
+        
+        .subsection {
+            counter-increment: subsection;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .subsection:before {
+            content: counter(section) "." counter(subsection) " ";
+            color: #3b82f6;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+        
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .subsection {
+                padding-left: 1rem;
+            }
+            
+            .subsection:before {
+                left: -0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <div class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <img src="https://placehold.co/160x50?text=Company+Logo" alt="Logo perusahaan dengan desain profesional" class="h-10">
+                </a>
+                <h1 class="text-xl font-bold text-gray-800 hidden sm:block">Syarat dan Ketentuan</h1>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Kembali ke Beranda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Introduction -->
+        <div class="bg-white rounded-xl shadow-sm p-8 mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">SYARAT DAN KETENTUAN PENGGUNAAN</h2>
+            <p class="text-center text-gray-600 mb-1">Terakhir diperbarui: 1 Januari 2023</p>
+            <p class="text-center text-gray-500 text-sm mb-8">Versi 2.1</p>
+            
+            <div class="highlight-box">
+                <p class="font-medium text-gray-700">PENTING: Mohon baca Syarat dan Ketentuan ini dengan seksama sebelum mengakses atau menggunakan layanan kami. Dengan mengakses atau menggunakan layanan kami, Anda menyetujui untuk terikat oleh Syarat dan Ketentuan ini.</p>
+            </div>
+        </div>
+
+        <!-- Legal Content -->
+        <div class="bg-white rounded-xl shadow-sm p-8 legal-container">
+            <!-- Section 1 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-8 mb-4">DEFINISI</h3>
+            <ol class="list-decimal pl-5 space-y-3 text-gray-600">
+                <li><strong>Platform</strong> mengacu pada situs web, aplikasi seluler, dan semua layanan terkait yang dimiliki dan dioperasikan oleh [Nama Perusahaan].</li>
+                <li><strong>Pengguna</strong> adalah setiap individu atau entitas yang mengakses atau menggunakan Platform.</li>
+                <li><strong>Konten</strong> mencakup semua teks, gambar, video, audio, perangkat lunak, kode, dan materi lainnya yang tersedia di Platform.</li>
+                <li><strong>Layanan</strong> berarti semua produk, layanan, dan fitur yang disediakan melalui Platform.</li>
+            </ol>
+
+            <!-- Section 2 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">PENGGUNAAN PLATFORM</h3>
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Persyaratan Umum</p>
+                <p class="text-gray-600 mt-2">Dengan menggunakan Platform ini, Anda menyatakan dan menjamin bahwa:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Anda berusia minimal 18 tahun atau telah mendapatkan izin dari orang tua/wali yang sah</li>
+                    <li>Anda memiliki kapasitas hukum untuk membuat perjanjian yang mengikat</li>
+                    <li>Semua informasi yang Anda berikan akurat dan terkini</li>
+                </ul>
+            </div>
+            
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Larangan Penggunaan</p>
+                <p class="text-gray-600 mt-2">Anda sepakat untuk TIDAK:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Menggunakan Platform untuk tujuan ilegal atau melanggar hukum yang berlaku</li>
+                    <li>Melanggar hak kekayaan intelektual kami atau pihak ketiga</li>
+                    <li>Mengganggu atau mencoba mengganggu keamanan Platform</li>
+                    <li>Melakukan scraping, crawling, atau ekstraksi data secara otomatis tanpa izin</li>
+                    <li>Menyebarkan malware, virus, atau kode berbahaya lainnya</li>
+                </ul>
+            </div>
+
+            <!-- Section 3 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">AKUN PENGGUNA</h3>
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Pendaftaran Akun</p>
+                <p class="text-gray-600 mt-2">Beberapa fitur Platform memerlukan pembuatan akun. Anda setuju untuk:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Memberikan informasi yang akurat, terkini, dan lengkap</li>
+                    <li>Memperbarui informasi jika terjadi perubahan</li>
+                    <li>Menjaga kerahasiaan kredensial akun Anda</li>
+                    <li>Bertanggung jawab penuh atas semua aktivitas yang terjadi di bawah akun Anda</li>
+                </ul>
+            </div>
+            
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Pembekuan Akun</p>
+                <p class="text-gray-600 mt-2">Kami berhak untuk menangguhkan atau menghentikan akun Anda, tanpa pemberitahuan sebelumnya, jika kami mendeteksi:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Pelanggaran terhadap Syarat dan Ketentuan ini</li>
+                    <li>Aktivitas yang mencurigakan atau tidak sah</li>
+                    <li>Upaya penipuan atau penyalahgunaan</li>
+                    <li>Kebutuhan untuk mematuhi persyaratan hukum atau regulasi</li>
+                </ul>
+            </div>
+
+            <!-- Section 4 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">HAK KEKAYAAN INTELEKTUAL</h3>
+            <div class="text-gray-600 space-y-4">
+                <p>Kami dan/atau pemberi lisensi kami memegang semua hak, kepemilikan, dan kepentingan atas Platform dan semua Konten asli yang terdapat di dalamnya, termasuk namun tidak terbatas pada hak cipta, merek dagang, paten, rahasia dagang, dan hak kekayaan intelektual lainnya.</p>
+                
+                <div class="highlight-box">
+                    <p class="font-medium text-gray-700">Penggunaan Platform tidak memberikan Anda hak untuk menggunakan merek dagang, logo, atau materi hak cipta kami tanpa izin tertulis dari kami.</p>
+                </div>
+                
+                <p>Anda dapat menggunakan Konten yang tersedia di Platform hanya untuk keperluan pribadi dan non-komersial, dengan ketentuan:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2">
+                    <li>Tidak memodifikasi atau mengubah Konten</li>
+                    <li>Tidak menghapus atau mengubah pemberitahuan hak milik apa pun</li>
+                    <li>Mencantumkan atribusi kepada kami sebagai pemilik Konten</li>
+                </ul>
+            </div>
+
+            <!-- Section 5 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">LAYANAN BERBAYAR DAN PEMBAYARAN</h3>
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Biaya dan Pembayaran</p>
+                <p class="text-gray-600 mt-2">Untuk layanan berbayar:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Anda setuju untuk membayar semua biaya yang terkait dengan layanan yang Anda pilih</li>
+                    <li>Pembayaran dilakukan sesuai dengan metode yang tersedia di Platform</li>
+                    <li>Kami dapat mengubah harga dari waktu ke waktu dengan pemberitahuan 30 hari sebelumnya</li>
+                    <li>Semua biaya dinyatakan dalam Rupiah dan sudah termasuk PPN jika berlaku</li>
+                </ul>
+            </div>
+            
+            <div class="subsection mt-5">
+                <p class="font-semibold text-gray-700">Pengembalian Dana</p>
+                <p class="text-gray-600 mt-2">Pada umumnya, semua pembayaran bersifat final dan tidak dapat dikembalikan kecuali:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-600">
+                    <li>Terjadi kesalahan teknis yang dapat diverifikasi dari pihak kami</li>
+                    <li>Diatur oleh peraturan perlindungan konsumen yang berlaku</li>
+                    <li>Terdapat ketentuan khusus pengembalian dana untuk layanan tertentu</li>
+                </ul>
+            </div>
+
+            <!-- Section 6 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">PEMBATASAN TANGGUNG JAWAB</h3>
+            <div class="text-gray-600 space-y-4">
+                <p>Platform disediakan "apa adanya" dan "sebagaimana tersedia". Sejauh diizinkan oleh hukum yang berlaku, kami tidak memberikan jaminan apa pun, baik tersurat maupun tersirat, mengenai Platform atau Konten apa pun.</p>
+                
+                <p>Dalam batas maksimum yang diizinkan oleh hukum, kami tidak bertanggung jawab atas:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2">
+                    <li>Kerusakan tidak langsung, khusus, insidental, konsekuensial, atau hukuman</li>
+                    <li>Kehilangan data, pendapatan, keuntungan, atau reputasi</li>
+                    <li>Gangguan atau ketidaktersediaan Platform</li>
+                    <li>Tindakan atau kelalaian pihak ketiga</li>
+                </ul>
+                
+                <p>Tanggung jawab kami dalam hal apa pun dibatasi hingga jumlah yang telah Anda bayarkan kepada kami dalam 12 bulan terakhir.</p>
+            </div>
+
+            <!-- Section 7 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">PERUBAHAN SYARAT DAN KETENTUAN</h3>
+            <div class="text-gray-600 space-y-4">
+                <p>Kami berhak untuk memodifikasi Syarat dan Ketentuan ini dari waktu ke waktu. Jika kami melakukan perubahan material, kami akan memberikan pemberitahuan melalui:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2">
+                    <li>Pengumuman di Platform</li>
+                    <li>Email ke alamat terdaftar Anda</li>
+                    <li>Notifikasi melalui aplikasi (jika berlaku)</li>
+                </ul>
+                
+                <p>Perubahan akan berlaku efektif setelah 30 hari sejak tanggal pemberitahuan, kecuali ditentukan lain. Penggunaan berkelanjutan Platform Anda setelah perubahan tersebut berarti Anda menerima Syarat dan Ketentuan yang baru.</p>
+            </div>
+
+            <!-- Section 8 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">HUKUM YANG BERLAKU DAN PENYELESAIAN SENGKETA</h3>
+            <div class="text-gray-600 space-y-4">
+                <p>Syarat dan Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul dari atau terkait dengan Syarat dan Ketentuan ini akan diselesaikan secara damai melalui musyawarah.</p>
+                
+                <p>Jika penyelesaian secara musyawarah tidak tercapai, para pihak sepakat untuk menyerahkan penyelesaian sengketa kepada pengadilan yang berwenang di Jakarta Selatan.</p>
+            </div>
+
+            <!-- Section 9 -->
+            <h3 class="section-title text-xl font-bold text-gray-800 mt-10 mb-4">HUBUNGI KAMI</h3>
+            <div class="text-gray-600 space-y-4">
+                <p>Untuk pertanyaan atau klarifikasi mengenai Syarat dan Ketentuan ini, silakan hubungi kami melalui:</p>
+                <ul class="list-disc pl-6 mt-2 space-y-2">
+                    <li>Email: legal@perusahaan.com</li>
+                    <li>Telepon: +62 21 1234 5678 (Jam kerja: Senin-Jumat, 09:00-17:00 WIB)</li>
+                    <li>Alamat Surat: Jl. Contoh No. 123, Jakarta Selatan 12345, Indonesia</li>
+                </ul>
+            </div>
+
+            <!-- Acceptance -->
+            <div class="bg-blue-50 rounded-lg p-6 mt-12 text-center">
+                <p class="font-medium text-gray-700">Dengan menggunakan Platform kami, Anda mengakui bahwa Anda telah membaca, memahami, dan menyetujui untuk terikat oleh Syarat dan Ketentuan ini.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="https://placehold.co/160x50?text=Company+Logo" alt="Logo perusahaan dengan desain minimalis" class="h-8">
+                </div>
+                <div class="text-sm text-gray-400">
+                    <p>&copy; 2023 [Nama Perusahaan]. Seluruh hak cipta dilindungi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
